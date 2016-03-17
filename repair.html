@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <title>预约维修</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css?v=10" />
+</head>
+<body>
+
+<div class="container">
+    <div class="row">
+        <div id="myCarousel" class="carousel slide" >
+            <!-- 轮播（Carousel）项目 -->
+            <div class="carousel-inner">
+                <div class="item active" style="height:180px;">
+                    <img src="http://pic.yupoo.com/forrest071/FiyTuelg/medium.jpg" class="img-responsive" alt="First slide">
+                </div>
+                <div class="item" style="height:180px;">
+                    <img src="http://pic.yupoo.com/forrest071/FiyTsMB8/medium.jpg" class="img-responsive" alt="Second slide">
+                </div>
+                <div class="item" style="height:180px;">
+                    <img src="http://pic.yupoo.com/forrest071/FiyTuelg/medium.jpg" class="img-responsive"  alt="Third slide">
+                </div>
+            </div>
+        </div>
+
+        <form role="form">
+            <div class="form-group form-top">
+                <label for="modelName" class="col-xs-4 control-label form-padleft">选择车型</label>
+                <div class="col-xs-8 form-pad">
+                    <select class="form-control" id="modelName">
+                        <option>请选择车型</option>
+                        <option>全新速派</option>
+                        <option>全新明锐</option>
+                        <option>Yeti</option>
+                        <option>明锐经典款</option>
+                    </select>
+                </div>
+            </div>
+            <div class="form-group form-top">
+                <label for="lastname" class="col-xs-4 control-label form-padleft">姓名</label>
+                <div class="col-xs-8 form-pad">
+                    <input type="text" class="form-control" id="lastname"
+                           placeholder="请输入姓名">
+                </div>
+            </div>
+            <div class="form-group form-top">
+                <label for="lastname" class="col-xs-4 control-label form-padleft">称谓</label>
+                <div class="radio col-xs-8 form-pad">
+                    <label>
+                        <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked> 先生
+                    </label>&nbsp&nbsp&nbsp&nbsp
+                    <label>
+                        <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2"> 女士
+                    </label>
+                </div>
+            </div>
+            <div class="form-group form-top">
+                <label for="mobile" class="col-xs-4 control-label form-padleft">手机</label>
+                <div class="col-xs-8 form-pad">
+                    <input type="text" class="form-control" id="mobile"
+                           placeholder="请输入手机号码">
+                </div>
+            </div>
+            <div class="form-group form-top">
+                <label for="appointment" class="col-xs-4 control-label form-padleft">预约时间</label>
+                <div class="col-xs-8 form-pad">
+                    <input type="date" class="form-control" id="appointment">
+                </div>
+            </div>
+            <div class="form-group form-top">
+                <label for="appointment" class="col-xs-4 control-label form-padleft">故障类型</label>
+                <div class="col-xs-8 form-pad">
+                    <input type="checkbox" id="cbRepairType0" name="cbRepairType" value="保养">
+                    <label for="cbRepairType1">保养</label>
+                    <input type="checkbox" id="cbRepairType1" name="cbRepairType" value="车漆">
+                    <label for="cbRepairType1">车漆</label>
+                    <input type="checkbox" id="cbRepairType2" name="cbRepairType" value="外观">
+                    <label for="cbRepairType1">外观</label>
+                    <input type="checkbox" id="cbRepairType3" name="cbRepairType" value="发动机">
+                    <label for="cbRepairType1">发动机</label>
+                    <input type="checkbox" id="cbRepairType4" name="cbRepairType" value="刹车">
+                    <label for="cbRepairType1">刹车</label>
+                    <input type="checkbox" id="cbRepairType5" name="cbRepairType" value="离合器">
+                    <label for="cbRepairType1">离合器</label>
+                    <input type="checkbox" id="cbRepairType6" name="cbRepairType" value="风挡玻璃">
+                    <label for="cbRepairType1">风挡玻璃</label>
+                    <input type="checkbox" id="cbRepairType7" name="cbRepairType" value="车轮">
+                    <label for="cbRepairType1">车轮</label>
+                    <input type="checkbox" id="cbRepairType8" name="cbRepairType" value="风挡玻璃">
+                    <label for="cbRepairType1">风挡玻璃</label>
+                    <input type="checkbox" id="cbRepairType9" name="cbRepairType" value="异响">
+                    <label for="cbRepairType1">异响</label>
+                    <input type="checkbox" id="cbRepairType10" name="cbRepairType" value="异味">
+                    <label for="cbRepairType1">异味</label>
+                    <input type="checkbox" id="cbRepairType11" name="cbRepairType" value="渗漏">
+                    <label for="cbRepairType1">渗漏</label>
+                    <input type="checkbox" id="cbRepairType12" name="cbRepairType" value="转向">
+                    <label for="cbRepairType1">转向</label>
+                    <input type="checkbox" id="cbRepairType13" name="cbRepairType" value="空调">
+                    <label for="cbRepairType1">空调</label>
+                    <input type="checkbox" id="cbRepairType14" name="cbRepairType" value="音响">
+                    <label for="cbRepairType1">音响</label>
+                    <input type="checkbox" id="cbRepairType15" name="cbRepairType" value="车内电器">
+                    <label for="cbRepairType1">车内电器</label>
+                    <input type="checkbox" id="cbRepairType16" name="cbRepairType" value="其他">
+                    <label for="cbRepairType1">其他</label>
+                </div>
+            </div>
+            <div class="form-group form-top">
+                <label for="txtDescription" class="col-xs-4 control-label form-padleft">具体描述</label>
+                <div class="col-xs-8 form-pad">
+                    <textarea style="width: 100%; height: 60px" id="txtDescription"
+                              name="txtDescription" maxlength="200"></textarea>
+                </div>
+            </div>
+            <div class="form-group form-top">
+                <div class="col-xs-4 form-padleft"></div>
+                <div class="col-xs-8 form-pad">
+                    <button type="button" class="btn btn-success btn-block">提交预约</button>
+                </div>
+            </div>
+            <div class="form-group form-top">
+                <div class="col-xs-12 form-padleft">
+                    <p class="text-muted">我们会在您的资料提交后第一时间与您取得联系。未经您的许可，您的资料不会透漏给任何第三方。</p>
+                </div>
+            </div>
+        </form>
+
+    </div>
+</div>
+
+
+</body>
+
+<script src="Scripts/vendors/jquery.min.js"></script>
+<script src="Scripts/vendors/angular.min.js"></script>
+<script src="Scripts/vendors/bootstrap.min.js"></script>
+
+<script>
+    $(function(){
+        $("#myCarousel").carousel('cycle');
+    });
+</script>
+</html>

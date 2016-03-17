@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <title>会员信息</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css?v=1" />
+</head>
+<body>
+
+<div class="container">
+    <div class="row gainsboro-color">
+        <div class="detail-div">
+            <h4 style="padding-top:10px;margin-top:0px;">基本信息</h4>
+            <div >
+                <table class="table div-bottom" >
+                    <tr>
+                        <td class="col-xs-4">会员卡号</td>
+                        <td ng-bind="getDate(carDetail.frkrq)">08121212</td>
+                    </tr>
+                    <tr>
+                        <td class="col-xs-4">车牌号</td>
+                        <td ng-bind="carDetail.fdph">沪A-7898C</td>
+                    </tr>
+                    <tr>
+                        <td class="col-xs-4">车主名</td>
+                        <td ng-bind="carDetail.fys">张三</td>
+                    </tr>
+                    <tr>
+                        <td class="col-xs-4">手机号码</td>
+                        <td ng-bind="carDetail.fys">18516135072</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+        <div class="detail-div">
+            <h4 style="padding-top:10px;margin-top:0px;">会员钱包</h4>
+            <div>
+                <table class="table div-bottom">
+                    <tr>
+                        <td class="col-xs-4"><span>余额</span></br><span>1000</span></td>
+                        <td ng-bind="getDate(carDetail.frkrq)"><span>积分</span></br><span>280</span></td>
+                        <td ng-bind="getDate(carDetail.frkrq)"><span>保养券</span></br><span>280</span></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+        <div class="detail-div">
+            <div>
+                <table class="table div-bottom">
+                    <tr>
+                        <td class="col-xs-4"><span>工时抵用券</span></br><span>1000</span></td>
+                        <td ng-bind="getDate(carDetail.frkrq)"><span>积分</span></br><span>280</span></td>
+                        <td ng-bind="getDate(carDetail.frkrq)"><span>保养券</span></br><span>280</span></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+
+<script src="Scripts/vendors/jquery.min.js"></script>
+<script src="Scripts/vendors/bootstrap.min.js"></script>
+</html>

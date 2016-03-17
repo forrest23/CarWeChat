@@ -1,0 +1,33 @@
+.form-top
+{
+    margin-top: 10px;
+    height: 30px;
+}
+
+.form-padleft
+{
+   padding-left: 15px;padding-right: 0px;margin-top: 7px;
+}
+
+.form-pad
+{
+    padding-left: 8px;padding-right: 15px;
+}
+
+.gainsboro-color {
+    background-color:gainsboro;
+}
+
+.detail-div {
+    background-color:white;
+    /*margin-bottom:5px;*/
+    /*padding:10px 0 5px 10px;*/
+}
+
+.div-bottom {
+    margin-bottom:10px;
+}
+
+.div-bottom1 {
+    margin-bottom:0px;
+}
